@@ -9,7 +9,7 @@ public class Opration {
 	String loRaUrl="https://66.42.65.86:8080/api/internal/login";
 	public static void main(String[] args) {
         JsonParser parse =new JsonParser();
-		 try {//
+		 try {//、
 	            JsonObject json=(JsonObject)parse.parse(tempJson);
 	            String rxInfo=json.get("rxInfo").toString();
 	            rxInfo=rxInfo.replaceAll("\\[", "");
